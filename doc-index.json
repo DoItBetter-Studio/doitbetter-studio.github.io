@@ -182,41 +182,6 @@
     ]
   },
   {
-    "id": "README",
-    "title": "CorruptTigga.github.io",
-    "url": "README.md",
-    "sections": [
-      {
-        "id": "corrupttiggagithubio",
-        "title": "CorruptTigga.github.io",
-        "content": "CorruptTigga.github.io\nWelcome to my GitHub Pages site. I'm **Anthony T. Lawrence**, an indie game developer and systems designer working on several simulation-driven projects.",
-        "level": 1,
-        "url": "README.md#corrupttiggagithubio"
-      },
-      {
-        "id": "projects",
-        "title": "🔥 Projects",
-        "content": "🔥 Projects\n**[Echo](https://github.com/CorruptTigga/Echo)**: A Viking-era LLM-powered open-world RPG.\n**[Xeno](https://github.com/CorruptStudio/Xeno)**: A C++ embedded scripting language for modding and sandbox-safe game logic.\n**Blood Runs Red**: A private 16-player co-op FPS inspired by *Red Dawn* and *Tomorrow, When the War Began*.",
-        "level": 2,
-        "url": "README.md#projects"
-      },
-      {
-        "id": "goals",
-        "title": "🎯 Goals",
-        "content": "🎯 Goals\nPush the boundaries of simulation, emergent AI, and real-time narrative.\nBuild safe and extensible systems for modders.\nShare tools, insights, and documentation with fellow devs.",
-        "level": 2,
-        "url": "README.md#goals"
-      },
-      {
-        "id": "quote",
-        "title": "🙌 Quote",
-        "content": "🙌 Quote\n*\"It be what it be.\"*\nThis site is maintained by [Anthony T. Lawrence](https://github.com/CorruptTigga), powered by a custom static markdown docs system.",
-        "level": 2,
-        "url": "README.md#quote"
-      }
-    ]
-  },
-  {
     "id": "SteelEditorSuite",
     "title": "Steel Editor Suite",
     "url": "SteelEditorSuite.md",
