@@ -61,7 +61,7 @@ Current tools include:
 <img src="assets/atlas.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
 <img src="assets/echo.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
 <img src="assets/forge.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
-<img src="assets/mapper.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
+<img src="assets/tool_showcase.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
 <img src="assets/pigment.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
 <img src="assets/steel_editor_suite.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
 
