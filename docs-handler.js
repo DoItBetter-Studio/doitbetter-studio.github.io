@@ -23,10 +23,73 @@ async function loadMarkdown(file, scrollToId) {
     const renderer = {
       heading({ tokens, depth }) {
         const text = this.parser.parseInline(tokens);
-
         const slug = slugify(text);
         return `<h${depth} id="${slug}">${text}</h${depth}>`;
       },
+      code({ text, lang }) {
+        // 1. Run escaping first so angle brackets don't break the HTML layout
+        let html = escapeHtml(text);
+
+        if (lang === 'c' || lang === 'xenoscript') {
+          const placeholders = [];
+
+          // 1. Safeguard Comments (Extract and hold)
+          html = html.replace(/(\/\/.*)/g, (match) => {
+            placeholders.push(`<span style="color:#6a9955; font-style:italic;">${match}</span>`);
+            return `___XENO_COMMENT_${placeholders.length - 1}___`;
+          });
+
+          // 2. Safeguard System Imports: import <math>; (Extract and hold)
+          html = html.replace(/\bimport\s+(&lt;.*?&gt;)/g, (match, library) => {
+            placeholders.push(`<span style="color:#569cd6; font-weight:bold;">import</span> <span style="color:#ce9178;">${library}</span>`);
+            return `___XENO_SYS_IMP_${placeholders.length - 1}___`;
+          });
+
+          // 3. Safeguard Local Project Imports: import "local_integration"; (Extract and hold)
+          html = html.replace(/\bimport\s+(?:&quot;|&#34;|["'])(.*?)(?:&quot;|&#34;|["'])/g, (match, path) => {
+            placeholders.push(`<span style="color:#569cd6; font-weight:bold;">import</span> <span style="color:#ce9178;">"${path}"</span>`);
+            return `___XENO_LOCAL_IMP_${placeholders.length - 1}___`;
+          });
+
+          // 4. Color & Safeguard All Remaining String Literals (Extract and hold)
+          html = html.replace(/(?:&quot;|&#34;|["'])(.*?)(?:&quot;|&#34;|["'])/g, (match, content) => {
+            placeholders.push(`<span style="color:#cece78;">"${content}"</span>`);
+            return `___XENO_STR_${placeholders.length - 1}___`;
+          });
+
+          // 5. Core Keywords & Statements
+          html = html.replace(/\b(class|interface|enum|function|return|if|match|case|break|static|final|new)\b/g,
+            '<span style="color:#569cd6; font-weight:bold;">$1</span>');
+
+          // 6. Access Blocks (C++ style scopes)
+          html = html.replace(/\b(public:|private:|protected:)\b/g, '<span style="color:#f25c54; font-weight:bold;">$1</span>');
+
+          // 7. Capitalized Class Names / Custom Types (Item, Inventory, MyMod)
+          html = html.replace(/\b(?!(?:class|interface|enum|new)\b)([A-Z][a-zA-Z0-9_]*)\b(?!\s*\()/g,
+            '<span style="color:#4ec9b0; font-weight:bold;">$1</span>');
+
+          // 8. Mod Engine Metadata Annotations (@Mod)
+          html = html.replace(/(@Mod)\b/g, '<span style="color:#ffb703; font-weight:bold;">$1</span>');
+
+          // 9. Primitives
+          html = html.replace(/\b(int|string|void|float|boolean)\b/g, '<span style="color:#569cd6;">$1</span>');
+
+          // 10. Digits & Numbers
+          html = html.replace(/\b(\d+)\b/g, '<span style="color:#b5cea8;">$1</span>');
+
+          // 11. Native Standard Library Calls
+          html = html.replace(/\b(print|Math\.sqrt|Int\.toFloat)\b/g, '<span style="color:#dcdcaa;">$1</span>');
+
+          // 12. Restore all placeholders back into the finalized HTML structure
+          for (let i = placeholders.length - 1; i >= 0; i--) {
+            html = html.replace(new RegExp(`___XENO_[A-Z_]+_${i}___`, 'g'), () => placeholders[i]);
+          }
+        }
+
+        return `<div style="text-align: left; width: 100%;">
+    <pre style="white-space: pre-wrap; overflow-wrap: break-word; padding: 10px; color: #e2e8f0; font-family: 'Consolas', 'Courier New', monospace;"><code class="language-xenoscript">${html}</code></pre>
+  </div>`;
+      }
     };
 
     marked.use({ renderer });
@@ -44,6 +107,15 @@ async function loadMarkdown(file, scrollToId) {
   } catch (e) {
     content.innerHTML = `<p style="color:#f88;">Error loading document: ${e.message}</p>`;
   }
+}
+
+function escapeHtml(string) {
+  return String(string)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
 
 function slugify(text) {

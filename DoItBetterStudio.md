@@ -2,7 +2,7 @@
 
 # Welcome to DoItBetter Studio
 
-<img src="logo.png" alt="DoItBetter Studio Logo" style="max-width: 100%; height: auto;" />
+<img src="assets/logo.png" alt="DoItBetter Studio Logo" style="max-width: 100%; height: auto;" />
 
 Welcome to **DoItBetter Studio**, an independent game development studio founded by Anthony T. Lawrence.
 
@@ -22,11 +22,11 @@ Rather than relying on procedural generation, every landscape, settlement, dunge
 
 Built on the **Damascus Engine**, Glyphborn emphasizes deterministic gameplay, true 3D tile-based worlds, deep modding support, and long-term immersion over scripted experiences.
 
-<img src="glyphborn.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
+<img src="assets/glyphborn.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
 
-<video src="glyphborn_gameplay.mp4" autoplay loop muted playsinline style="width: 100%; height: auto; object-fit: cover;"></video>
+<video src="assets/glyphborn_gameplay.mp4" autoplay loop muted playsinline style="width: 100%; height: auto; object-fit: cover;"></video>
 
-<img src="steel_editor_suite.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
+<img src="assets/tool_showcase.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
 
 </div>
 
@@ -44,16 +44,28 @@ Every major subsystem—from world streaming to materials and animations—is bu
 
 ## 🛠 Steel Editor Suite
 
+
 The Steel Editor Suite is a collection of purpose-built development tools designed alongside Damascus.
 
 Current tools include:
 
 * **Atlas** — World and overworld editor
-* **Mapper** — Map and chunk editor
-* **Forge** — Model, material, and animation pipeline
-* **Pigment** — Runtime UI skinning editor
 * **Echo** — Audio authoring tools
+* **Forge** — Model, material, and animation pipeline
+* **Mapper** — Map and chunk editor
+* **Pigment** — Runtime UI skinning editor
 * **Steel Hub** — Unified launcher and project management
+
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; align-items: center; margin: 2rem 0;">
+
+<img src="assets/atlas.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
+<img src="assets/echo.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
+<img src="assets/forge.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
+<img src="assets/mapper.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
+<img src="assets/pigment.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
+<img src="assets/steel_editor_suite.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
+
+</div>
 
 Together, these tools form an integrated workflow where assets move seamlessly from creation to the engine with minimal friction.
 

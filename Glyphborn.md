@@ -1,4 +1,4 @@
-<img src="glyphborn_logo.png" alt="DoItBetter Studio Logo" style="width: 128px; height: 128px;" />
+<img src="assets/glyphborn_logo.png" alt="Glyphborn Logo" style="width: 128px; height: 128px;" />
 
 
 > **"The world should exist independently of the player."**
