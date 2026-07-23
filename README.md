@@ -1,23 +1,32 @@
-# CorruptTigga.github.io
+# DoItBetter Studio
 
-Welcome to my GitHub Pages site. I'm **Anthony T. Lawrence**, an indie game developer and systems designer working on several simulation-driven projects.
+This repository powers the DoItBetter Studio website hosted on GitHub Pages. It is a lightweight documentation portal for the studio’s projects, built as a static site that loads markdown content and presents it through a searchable interface.
 
-## 🔥 Projects
+## What this site is
 
-- **[Echo](https://github.com/CorruptTigga/Echo)**: A Viking-era LLM-powered open-world RPG.
-- **[Xeno](https://github.com/CorruptStudio/Xeno)**: A C++ embedded scripting language for modding and sandbox-safe game logic.
-- **Blood Runs Red**: A private 16-player co-op FPS inspired by *Red Dawn* and *Tomorrow, When the War Began*.
+This project is not a single app or game build. Instead, it serves as a central hub for information about the studio’s work, including:
 
-## 🎯 Goals
+- an overview of DoItBetter Studio
+- project pages for Glyphborn, Damascus, Steel Editor Suite, and XenoScript
+- a simple documentation experience built with static HTML, CSS, and JavaScript
 
-- Push the boundaries of simulation, emergent AI, and real-time narrative.
-- Build safe and extensible systems for modders.
-- Share tools, insights, and documentation with fellow devs.
+## Featured projects
 
-## 🙌 Quote
+- **Glyphborn** — A handcrafted Viking-age sandbox RPG focused on exploration, survival, roleplay, and player-driven storytelling.
+- **Damascus** — A custom cross-platform game engine designed for deterministic performance, large handcrafted worlds, and deep engine control.
+- **Steel Editor Suite** — A collection of purpose-built tools for world editing, asset pipelines, UI work, and content creation.
+- **XenoScript** — A deterministic, sandboxed scripting language designed for safe modding and gameplay extension.
 
-> *"It be what it be."*
+## Site structure
 
----
+The site is driven by:
 
-This site is maintained by [Anthony T. Lawrence](https://github.com/CorruptTigga), powered by a custom static markdown docs system.
+- [index.html](index.html) — the main page shell and navigation
+- [docs-handler.js](docs-handler.js) — the logic that loads and renders markdown content
+- [DoItBetterStudio.md](DoItBetterStudio.md) and the other project markdown files — the content shown on the site
+
+## Mission
+
+DoItBetter Studio is focused on building immersive worlds, custom technology, and creator-friendly tools that support long-term projects rather than short-lived trends.
+
+> “Strive for more than just Perfection.”
