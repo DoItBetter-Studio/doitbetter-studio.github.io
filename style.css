@@ -40,6 +40,12 @@ body.xeno {
   --secondary-hover: #05545c;
 }
 
+#count {
+  position: absolute;
+  bottom: 0px;
+  padding: 8px 12px;
+}
+
 #sidebar {
   width: 280px;
   min-width: 280px;

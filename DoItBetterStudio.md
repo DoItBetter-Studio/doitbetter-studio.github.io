@@ -4,73 +4,87 @@
 
 <img src="logo.png" alt="DoItBetter Studio Logo" style="max-width: 100%; height: auto;" />
 
-Welcome to **DoItBetter Studio**, the indie game development studio founded by Anthony T. Lawrence.  
-Our motto:  
-> **"Strive for more than just Perfection."** 
+Welcome to **DoItBetter Studio**, an independent game development studio founded by Anthony T. Lawrence.
 
-This hub showcases immersive game worlds, innovative AI-driven simulations, and powerful modding tools designed for creators and players alike.
+> **"Strive for more than just Perfection."**
 
----
-
-## 🎨 Games That Push Boundaries
-
-### Echo
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; align-items: center; margin: 2rem 0;">
-
-A Viking-era open-world narrative RPG that blends brutal realism with cutting-edge AI. Echo simulates living NPCs with memories, emotions, and evolving family lines. Experience emergent storytelling shaped by your choices in a harsh, dynamic world.
-
-![Echo Concept Art](echo.png)
-
-![Echo Concept Art](echo.png)
-</div>
+Our mission is to build immersive worlds powered by custom technology, thoughtfully crafted tools, and systems designed to stand the test of time. Every part of our workflow—from the engine to the editors—is built in-house with creators, modders, and long-term projects in mind.
 
 ---
 
-### Blood Runs Red
+## ⚔️ Featured Project — Glyphborn
 
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; align-items: center; margin: 2rem 0;">
 
-![Blood Runs Red Concept Art](blood-art.png)
+Glyphborn is a handcrafted historical Viking sandbox built around exploration, survival, roleplay, and player-driven storytelling.
 
-![Blood Runs Red Concept Art](blood-art.png)
+Rather than relying on procedural generation, every landscape, settlement, dungeon, and coastline is carefully designed to create a believable world inspired by Viking-age Europe. Players forge their own path through a classless progression system where reputation, skill, and relationships define who they become.
 
-<div>
+Built on the **Damascus Engine**, Glyphborn emphasizes deterministic gameplay, true 3D tile-based worlds, deep modding support, and long-term immersion over scripted experiences.
 
-A gritty 16-player co-op survival FPS set in an alternate 1989 where the USSR invades the US. Inspired by *Red Dawn*, it features authentic period weapons, dynamic missions, and deep narrative about young Americans fighting for their homeland.
+<img src="glyphborn.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
 
-*Full details and dev logs available on the <a href="#" data-file="BloodRunsRed.md">Blood Runs Red</a>.*
-</div>
+<video src="glyphborn_gameplay.mp4" autoplay loop muted playsinline style="width: 100%; height: auto; object-fit: cover;"></video>
+
+<img src="steel_editor_suite.png" alt="Glyphborn Concept Art" style="width: 100%; height: auto;" />
 
 </div>
 
 ---
 
-## 🛠 Modding Made Easy with Xeno
+## ⚙️ Damascus Engine
 
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; align-items: center; margin: 2rem 0;">
+Damascus is our custom-built cross-platform game engine developed specifically for large handcrafted worlds.
 
-![Xeno Framework Logo](xeno-logo.png)  
+Designed around deterministic systems and data-oriented architecture, Damascus powers world streaming, rendering, animation, scripting, resource management, and gameplay through lightweight resource references and efficient runtime caches.
 
-Xeno is a custom scripting language designed for deep engine integration with a secure sandbox environment. It empowers modders with clean, scalable tools to create new gameplay mechanics, content, and experiences.
+Every major subsystem—from world streaming to materials and animations—is built to work together through a consistent, scalable architecture.
 
-![Xeno Framework Logo](xeno-logo.png)  
-</div>
+---
+
+## 🛠 Steel Editor Suite
+
+The Steel Editor Suite is a collection of purpose-built development tools designed alongside Damascus.
+
+Current tools include:
+
+* **Atlas** — World and overworld editor
+* **Mapper** — Map and chunk editor
+* **Forge** — Model, material, and animation pipeline
+* **Pigment** — Runtime UI skinning editor
+* **Echo** — Audio authoring tools
+* **Steel Hub** — Unified launcher and project management
+
+Together, these tools form an integrated workflow where assets move seamlessly from creation to the engine with minimal friction.
+
+---
+
+## 📜 XenoScript
+
+XenoScript is our custom scripting language built specifically for Damascus.
+
+Designed for deterministic gameplay and secure modding, XenoScript allows creators to extend games without exposing unsafe engine functionality. Scripts compile into efficient bytecode and execute inside a sandboxed virtual machine designed for long-term compatibility and stability.
 
 ---
 
 ## ⚙️ Our Philosophy
 
-At DoItBetter Studio, we build games and tools that don’t just tell stories — they *live* them. We blend technical innovation with rich narratives and community-driven modding ecosystems to create worlds that react and evolve naturally.
+Technology should empower creativity—not limit it.
 
-We are passionate about pushing the boundaries of indie game development — always striving to *be more than just perfect*.
+Every engine system, editor, asset pipeline, and scripting tool we develop exists for one purpose: enabling richer worlds and better experiences for both developers and players.
+
+We believe handcrafted worlds, deterministic systems, powerful creator tools, and thoughtful design produce games that remain engaging for years—not just weeks.
 
 ---
 
 ## ⚠️ Disclaimer
 
-**DoItBetter Studio** and associated trademarks are currently unregistered.  
-LLC formation and trademark registrations are planned.  
-Use of these names and marks is subject to change.  
+**DoItBetter Studio** and associated trademarks are currently unregistered.
 
-Thank you for your support and understanding.
+LLC formation and trademark registration are planned.
+
+Names, logos, and branding may change as development continues.
+
+Thank you for supporting independent game development.
+
 </div>
