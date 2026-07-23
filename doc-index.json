@@ -1,43 +1,64 @@
 [
   {
-    "id": "BloodRunsRed",
-    "title": "Blood Runs Red",
-    "url": "BloodRunsRed.md",
+    "id": "Damascus",
+    "title": "Damascus Engine",
+    "url": "Damascus.md",
     "sections": [
       {
-        "id": "blood-runs-red",
-        "title": "Blood Runs Red",
-        "content": "Blood Runs Red",
+        "id": "damascus-engine",
+        "title": "Damascus Engine",
+        "content": "Damascus Engine\n**\"Built from the ground up for maximum control, deterministic performance, and zero bloat.\"**\n**Damascus** is a custom, low-level 3D game engine written in **pure C** and **OpenGL**. Designed specifically to power *Glyphborn* and its supporting tools, Damascus rejects heavy commercial framework bloat in favor of manual memory management, explicit cache-friendly data structures, and total runtime control.",
         "level": 1,
-        "url": "BloodRunsRed.md#blood-runs-red"
+        "url": "Damascus.md#damascus-engine"
       },
       {
-        "id": "overview",
-        "title": "Overview",
-        "content": "Overview\n**Blood Runs Red** is a co-op survival FPS set in an alternate-history 1989, where the Soviet Union launches a surprise invasion of the American Midwest. What begins as a slice-of-life summer in small-town USA quickly spirals into all-out war. Players take control of a group of recent high school graduates as they fight to survive, resist, and reclaim their home.\nBuilt in **Unity**, with **Steamworks.Net** for multiplayer integration and **Xeno** as the modding backend, the game delivers intense combat, high-stakes decision making, and deep replayability through player-driven strategies and persistent consequences.",
+        "id": "architectural-highlights",
+        "title": "Architectural Highlights",
+        "content": "Architectural Highlights",
         "level": 2,
-        "url": "BloodRunsRed.md#overview"
+        "url": "Damascus.md#architectural-highlights"
       },
       {
-        "id": "gameplay-and-features",
-        "title": "Gameplay & Features",
-        "content": "Gameplay & Features\n**Alternate History Narrative:** A grounded reimagining of Cold War escalation, with story arcs shaped by player actions and consequences.\n**Survival Co-op FPS:** Team-based gameplay that emphasizes scavenging, coordination, and tactical choices.\n**Dynamic Base Options:** Choose between a fortified Safe Haven, stealthy Nomadic Resistance, or a risky High-Stakes Outpost—each with unique advantages and tradeoffs.\n**Modding First:** Full modding support via **Xeno**, allowing deep customization of missions, weapons, maps, AI behavior, and narrative arcs.\n**Persistent World State:** Decisions have long-term effects; lose your base, and you may lose everything.\n**Emergent Resistance:** Engage in guerrilla-style warfare against occupying Soviet forces in dynamically shifting conditions.",
-        "level": 2,
-        "url": "BloodRunsRed.md#gameplay-and-features"
+        "id": "pure-c-and-modern-opengl-core",
+        "title": "⚡ Pure C & Modern OpenGL Core",
+        "content": "⚡ Pure C & Modern OpenGL Core\n**Zero Engine Overhead:** Built without massive third-party abstractions, ensuring instant boot times, minimal memory footprints, and raw hardware efficiency.\n**Deterministic Execution:** Built around deterministic state updates, making multiplayer synchronization, 3D tile resolution, and system simulation rock-solid.",
+        "level": 3,
+        "url": "Damascus.md#pure-c-and-modern-opengl-core"
       },
       {
-        "id": "development-philosophy",
-        "title": "Development Philosophy",
-        "content": "Development Philosophy\n**Blood Runs Red** was born from a love of gritty, systemic survival games and a fascination with \"what-if\" historical scenarios. It's built to empower players and modders alike to tell their own stories of rebellion, sacrifice, and survival. Whether you're defending a small-town barn or launching a risky strike on a Soviet convoy, your choices matter—and they may just shape the future of your America.",
-        "level": 2,
-        "url": "BloodRunsRed.md#development-philosophy"
+        "id": "dynamic-world-and-chunk-streaming",
+        "title": "🌐 Dynamic World & Chunk Streaming",
+        "content": "🌐 Dynamic World & Chunk Streaming\n**Massive Spatial Bounds:** Engineered to process massive matrix layouts (such as *Glyphborn's* 768×384 chunk system) through binary caching pipelines.\n**Seamless Streaming:** Dynamically loads and unloads map chunks in real-time, eliminating traditional loading screens across vast continental geographies.",
+        "level": 3,
+        "url": "Damascus.md#dynamic-world-and-chunk-streaming"
       },
       {
-        "id": "repository",
-        "title": "Repository",
-        "content": "Repository\nComing soon. Full source and modding documentation will be available via Xeno’s modding interface:  \n🔗 [Xeno Modding Docs](https://corrupttigga.github.io/Xeno)",
+        "id": "true-3d-tile-and-voxel-trajectory-pipeline",
+        "title": "📐 True 3D Tile & Voxel Trajectory Pipeline",
+        "content": "📐 True 3D Tile & Voxel Trajectory Pipeline\n**Spatial 3D Tile Resolution:** Blends classic grid-based movement with full 3D spatial awareness—handling multi-layer elevation, vertical slopes, and 3D directional cones.\n**Voxel Trajectory Tracing:** Projectiles and line-of-sight checks step tile-by-tile through 3D space using fast voxel-style raycasting rather than expensive physics hitboxes.",
+        "level": 3,
+        "url": "Damascus.md#true-3d-tile-and-voxel-trajectory-pipeline"
+      },
+      {
+        "id": "unified-studio-ecosystem",
+        "title": "Unified Studio Ecosystem",
+        "content": "Unified Studio Ecosystem\nDamascus isn't just an engine—it is the hub for DoItBetter Studio's entire software pipeline:\n**Steel Editor Suite Integration:** Interfaces natively with custom-built tools for map design, asset packing, UI layout, and animation pipelines.\n**Native XenoScript Virtual Machine:** Houses an embedded, compile-time sandboxed bytecode runner to execute modding logic safely and efficiently without compromising engine stability.",
         "level": 2,
-        "url": "BloodRunsRed.md#repository"
+        "url": "Damascus.md#unified-studio-ecosystem"
+      },
+      {
+        "id": "philosophy-why-build-custom",
+        "title": "Philosophy: Why Build Custom?",
+        "content": "Philosophy: Why Build Custom?\nCommercial off-the-shelf engines come with unnecessary bloat, unpredictable licensing models, and restrictive architectural assumptions. **Damascus** was built to guarantee 100% ownership over every system, allowing the game, tools, and engine to evolve in complete lockstep.",
+        "level": 2,
+        "url": "Damascus.md#philosophy-why-build-custom"
+      },
+      {
+        "id": "resources-and-technical-deep-dives",
+        "title": "Resources & Technical Deep Dives",
+        "content": "Resources & Technical Deep Dives\n🛠️ **[Steel Editor Suite Overview]()**\n📜 **[XenoScript Bytecode Specification]()**\n⚔️ **[Glyphborn Integration Details]()**",
+        "level": 3,
+        "url": "Damascus.md#resources-and-technical-deep-dives"
       }
     ]
   },
@@ -49,142 +70,268 @@
       {
         "id": "welcome-to-doitbetter-studio",
         "title": "Welcome to DoItBetter Studio",
-        "content": "Welcome to DoItBetter Studio\n<img src=\"logo.png\" alt=\"DoItBetter Studio Logo\" style=\"max-width: 100%; height: auto;\" />\nWelcome to **DoItBetter Studio**, the indie game development studio founded by Anthony T. Lawrence.  \nOur motto:\n**\"Strive for more than just Perfection.\"**\nThis hub showcases immersive game worlds, innovative AI-driven simulations, and powerful modding tools designed for creators and players alike.",
+        "content": "Welcome to DoItBetter Studio\n<img src=\"logo.png\" alt=\"DoItBetter Studio Logo\" style=\"max-width: 100%; height: auto;\" />\nWelcome to **DoItBetter Studio**, an independent game development studio founded by Anthony T. Lawrence.\n**\"Strive for more than just Perfection.\"**\nOur mission is to build immersive worlds powered by custom technology, thoughtfully crafted tools, and systems designed to stand the test of time. Every part of our workflow—from the engine to the editors—is built in-house with creators, modders, and long-term projects in mind.",
         "level": 1,
         "url": "DoItBetterStudio.md#welcome-to-doitbetter-studio"
       },
       {
-        "id": "games-that-push-boundaries",
-        "title": "🎨 Games That Push Boundaries",
-        "content": "🎨 Games That Push Boundaries",
+        "id": "featured-project-glyphborn",
+        "title": "⚔️ Featured Project — Glyphborn",
+        "content": "⚔️ Featured Project — Glyphborn\n<div style=\"display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; align-items: center; margin: 2rem 0;\">\nGlyphborn is a handcrafted historical Viking sandbox built around exploration, survival, roleplay, and player-driven storytelling.\nRather than relying on procedural generation, every landscape, settlement, dungeon, and coastline is carefully designed to create a believable world inspired by Viking-age Europe. Players forge their own path through a classless progression system where reputation, skill, and relationships define who they become.\nBuilt on the **Damascus Engine**, Glyphborn emphasizes deterministic gameplay, true 3D tile-based worlds, deep modding support, and long-term immersion over scripted experiences.\n<img src=\"glyphborn.png\" alt=\"Glyphborn Concept Art\" style=\"width: 100%; height: auto;\" />\n<video src=\"glyphborn_gameplay.mp4\" autoplay loop muted playsinline style=\"width: 100%; height: auto; object-fit: cover;\"></video>\n<img src=\"steel_editor_suite.png\" alt=\"Glyphborn Concept Art\" style=\"width: 100%; height: auto;\" />\n</div>",
         "level": 2,
-        "url": "DoItBetterStudio.md#games-that-push-boundaries"
+        "url": "DoItBetterStudio.md#featured-project-glyphborn"
       },
       {
-        "id": "echo",
-        "title": "Echo",
-        "content": "Echo\n<div style=\"display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; align-items: center; margin: 2rem 0;\">\nA Viking-era open-world narrative RPG that blends brutal realism with cutting-edge AI. Echo simulates living NPCs with memories, emotions, and evolving family lines. Experience emergent storytelling shaped by your choices in a harsh, dynamic world.\n![Echo Concept Art](echo.png)\n![Echo Concept Art](echo.png)\n</div>",
-        "level": 3,
-        "url": "DoItBetterStudio.md#echo"
-      },
-      {
-        "id": "blood-runs-red",
-        "title": "Blood Runs Red",
-        "content": "Blood Runs Red\n<div style=\"display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; align-items: center; margin: 2rem 0;\">\n![Blood Runs Red Concept Art](blood-art.png)\n![Blood Runs Red Concept Art](blood-art.png)\n<div>\nA gritty 16-player co-op survival FPS set in an alternate 1989 where the USSR invades the US. Inspired by *Red Dawn*, it features authentic period weapons, dynamic missions, and deep narrative about young Americans fighting for their homeland.\n*Full details and dev logs available on the <a href=\"#\" data-file=\"BloodRunsRed.md\">Blood Runs Red</a>.*\n</div>\n</div>",
-        "level": 3,
-        "url": "DoItBetterStudio.md#blood-runs-red"
-      },
-      {
-        "id": "modding-made-easy-with-xeno",
-        "title": "🛠 Modding Made Easy with Xeno",
-        "content": "🛠 Modding Made Easy with Xeno\n<div style=\"display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; align-items: center; margin: 2rem 0;\">\n![Xeno Framework Logo](xeno-logo.png)\nXeno is a custom scripting language designed for deep engine integration with a secure sandbox environment. It empowers modders with clean, scalable tools to create new gameplay mechanics, content, and experiences.\n![Xeno Framework Logo](xeno-logo.png)  \n</div>",
+        "id": "damascus-engine",
+        "title": "⚙️ Damascus Engine",
+        "content": "⚙️ Damascus Engine\nDamascus is our custom-built cross-platform game engine developed specifically for large handcrafted worlds.\nDesigned around deterministic systems and data-oriented architecture, Damascus powers world streaming, rendering, animation, scripting, resource management, and gameplay through lightweight resource references and efficient runtime caches.\nEvery major subsystem—from world streaming to materials and animations—is built to work together through a consistent, scalable architecture.",
         "level": 2,
-        "url": "DoItBetterStudio.md#modding-made-easy-with-xeno"
+        "url": "DoItBetterStudio.md#damascus-engine"
+      },
+      {
+        "id": "steel-editor-suite",
+        "title": "🛠 Steel Editor Suite",
+        "content": "🛠 Steel Editor Suite\nThe Steel Editor Suite is a collection of purpose-built development tools designed alongside Damascus.\nCurrent tools include:\n**Atlas** — World and overworld editor\n**Mapper** — Map and chunk editor\n**Forge** — Model, material, and animation pipeline\n**Pigment** — Runtime UI skinning editor\n**Echo** — Audio authoring tools\n**Steel Hub** — Unified launcher and project management\nTogether, these tools form an integrated workflow where assets move seamlessly from creation to the engine with minimal friction.",
+        "level": 2,
+        "url": "DoItBetterStudio.md#steel-editor-suite"
+      },
+      {
+        "id": "xenoscript",
+        "title": "📜 XenoScript",
+        "content": "📜 XenoScript\nXenoScript is our custom scripting language built specifically for Damascus.\nDesigned for deterministic gameplay and secure modding, XenoScript allows creators to extend games without exposing unsafe engine functionality. Scripts compile into efficient bytecode and execute inside a sandboxed virtual machine designed for long-term compatibility and stability.",
+        "level": 2,
+        "url": "DoItBetterStudio.md#xenoscript"
       },
       {
         "id": "our-philosophy",
         "title": "⚙️ Our Philosophy",
-        "content": "⚙️ Our Philosophy\nAt DoItBetter Studio, we build games and tools that don’t just tell stories — they *live* them. We blend technical innovation with rich narratives and community-driven modding ecosystems to create worlds that react and evolve naturally.\nWe are passionate about pushing the boundaries of indie game development — always striving to *be more than just perfect*.",
+        "content": "⚙️ Our Philosophy\nTechnology should empower creativity—not limit it.\nEvery engine system, editor, asset pipeline, and scripting tool we develop exists for one purpose: enabling richer worlds and better experiences for both developers and players.\nWe believe handcrafted worlds, deterministic systems, powerful creator tools, and thoughtful design produce games that remain engaging for years—not just weeks.",
         "level": 2,
         "url": "DoItBetterStudio.md#our-philosophy"
       },
       {
         "id": "disclaimer",
         "title": "⚠️ Disclaimer",
-        "content": "⚠️ Disclaimer\n**DoItBetter Studio** and associated trademarks are currently unregistered.  \nLLC formation and trademark registrations are planned.  \nUse of these names and marks is subject to change.\nThank you for your support and understanding.\n</div>",
+        "content": "⚠️ Disclaimer\n**DoItBetter Studio** and associated trademarks are currently unregistered.\nLLC formation and trademark registration are planned.\nNames, logos, and branding may change as development continues.\nThank you for supporting independent game development.\n</div>",
         "level": 2,
         "url": "DoItBetterStudio.md#disclaimer"
       }
     ]
   },
   {
-    "id": "Echo",
-    "title": "Echo",
-    "url": "Echo.md",
+    "id": "Glyphborn",
+    "title": "Core Pillars",
+    "url": "Glyphborn.md",
     "sections": [
       {
-        "id": "echo",
-        "title": "Echo",
-        "content": "Echo",
-        "level": 1,
-        "url": "Echo.md#echo"
+        "id": "core-pillars",
+        "title": "Core Pillars",
+        "content": "Core Pillars",
+        "level": 2,
+        "url": "Glyphborn.md#core-pillars"
       },
       {
-        "id": "overview",
-        "title": "Overview",
-        "content": "Overview\n**Echo** is an ambitious Viking-era open-world narrative RPG that blends cutting-edge AI with gritty, brutal realism. It explores life in a harsh, unforgiving world where every NPC is a living, breathing agent with memories, emotions, and evolving family lines. The world does not wait for the player — it keeps moving, evolving, and reacting.",
-        "level": 2,
-        "url": "Echo.md#overview"
+        "id": "a-handcrafted-world",
+        "title": "🌲 A Handcrafted World",
+        "content": "🌲 A Handcrafted World\nInstead of creating content algorithmically, Glyphborn focuses on creating places worth remembering:\n**Dynamic Chunk Streaming:** Explore vast continental landscapes seamlessly without traditional loading screens, powered by Damascus' map chunk streaming pipeline.\n**Layered Tileset System:** Regional tilesets define country-wide biomes, local tilesets introduce unique settlements and castles, and interior tilesets render dungeons and structures with maximum resource efficiency.",
+        "level": 3,
+        "url": "Glyphborn.md#a-handcrafted-world"
       },
       {
-        "id": "gameplay-and-features",
-        "title": "Gameplay & Features",
-        "content": "Gameplay & Features\n**Living NPCs:** NPCs simulate complex emotional states, relationships, and memories, creating emergent storytelling through their interactions and decisions.\n**Multi-Generational Simulation:** Family lines grow, evolve, and adapt over time, including pregnancy, childbirth, and mortality systems.\n**Dynamic World:** Player-driven narrative with a reactive environment that changes based on your actions and choices.\n**Technical Foundation:** Built in C++ with OpenGL 3.3 Core for graphics and LibTorch powering a custom Game Master LLM that guides story and NPC behavior.\n**Text-Driven Gameplay:** Narrative commands allow deep immersion, with action markers and descriptive input guiding gameplay.\n**No Magic:** Focused on realism, historical accuracy, and believable simulation over fantasy.",
-        "level": 2,
-        "url": "Echo.md#gameplay-and-features"
+        "id": "classless-character-progression",
+        "title": "⚔️ Classless Character Progression",
+        "content": "⚔️ Classless Character Progression\n**Practice-Based Mastery:** You are defined by what you do, not what you select at character creation. Skills naturally improve through usage.\n**Unrestricted Growth:** Combat, survival, crafting, trading, and diplomacy all contribute to your development without forcing you into rigid archetypes.",
+        "level": 3,
+        "url": "Glyphborn.md#classless-character-progression"
       },
       {
-        "id": "development-philosophy",
-        "title": "Development Philosophy",
-        "content": "Development Philosophy\nEcho is designed to push the boundaries of game simulation and narrative AI. It aims to create a living world where players feel truly immersed, and NPCs behave with human-like complexity, creating stories unique to each playthrough.",
-        "level": 2,
-        "url": "Echo.md#development-philosophy"
+        "id": "an-autonomous-world",
+        "title": "🌍 An Autonomous World",
+        "content": "🌍 An Autonomous World\n**Living Regional Systems:** Settlements have distinct identities, regions foster unique cultures, and the world continues whether the player is present or not.\n**Meaningful Exploration:** Travel has weight and consequence, rewarding curiosity and spatial observation over simply following objective UI markers.",
+        "level": 3,
+        "url": "Glyphborn.md#an-autonomous-world"
       },
       {
-        "id": "repository",
-        "title": "Repository",
-        "content": "Repository\nExplore the source, contribute, or check out dev logs here:  \n🔗 [Echo on GitHub](https://github.com/CorruptTigga/Echo)\n🔗 [Echo Docs](https://corrupttigga.github.io/Echo/)",
+        "id": "built-on-custom-technology",
+        "title": "Built on Custom Technology",
+        "content": "Built on Custom Technology",
         "level": 2,
-        "url": "Echo.md#repository"
+        "url": "Glyphborn.md#built-on-custom-technology"
+      },
+      {
+        "id": "damascus-engine-and-steel-editor-suite",
+        "title": "Damascus Engine & Steel Editor Suite",
+        "content": "Damascus Engine & Steel Editor Suite\nGlyphborn is powered entirely by custom, in-house technology. Every asset—from world maps and models to materials, user interfaces, animations, and core systems—is constructed using the **Damascus Engine** and the **Steel Editor Suite**. This close integration allows the game, engine, and editors to evolve together with maximum performance and zero bloat.",
+        "level": 3,
+        "url": "Glyphborn.md#damascus-engine-and-steel-editor-suite"
+      },
+      {
+        "id": "native-modding-via-xenoscript",
+        "title": "Native Modding via XenoScript",
+        "content": "Native Modding via XenoScript\nDesigned for long-term community extensibility, Glyphborn provides deep modding support through **XenoScript**. Creators can build new gameplay mechanics, quests, and custom content within a deterministic, sandboxed execution environment built specifically for Damascus.",
+        "level": 3,
+        "url": "Glyphborn.md#native-modding-via-xenoscript"
+      },
+      {
+        "id": "project-hub-and-resources",
+        "title": "Project Hub & Resources",
+        "content": "Project Hub & Resources\nGlyphborn represents the core vision of DoItBetter Studio—building a world players want to return to not because it is endless, but because it feels alive.\n📖 **[Read the Full Game Design Document (GDD)](https://github.com/DoItBetter-Studio/Glyphborn/blob/main/GDD.md)**\n🛠️ **<a href=\"#\" data-file=\"Damascus.md\">Explore the Damascus Engine Specs</a>**\n📜 **[XenoScript Modding Guides]()**",
+        "level": 2,
+        "url": "Glyphborn.md#project-hub-and-resources"
       }
     ]
   },
   {
-    "id": "Xeno",
-    "title": "Xeno",
-    "url": "Xeno.md",
+    "id": "README",
+    "title": "CorruptTigga.github.io",
+    "url": "README.md",
     "sections": [
       {
-        "id": "xeno",
-        "title": "Xeno",
-        "content": "Xeno",
+        "id": "corrupttiggagithubio",
+        "title": "CorruptTigga.github.io",
+        "content": "CorruptTigga.github.io\nWelcome to my GitHub Pages site. I'm **Anthony T. Lawrence**, an indie game developer and systems designer working on several simulation-driven projects.",
         "level": 1,
-        "url": "Xeno.md#xeno"
+        "url": "README.md#corrupttiggagithubio"
       },
       {
-        "id": "overview",
-        "title": "Overview",
-        "content": "Overview\n**Xeno** is a custom scripting language developed from the ground up to serve as a robust, scalable, and safe modding framework. Inspired by Lua and traditional mod APIs, Xeno integrates directly with game source code, allowing modders to extend game logic securely and efficiently.",
+        "id": "projects",
+        "title": "🔥 Projects",
+        "content": "🔥 Projects\n**[Echo](https://github.com/CorruptTigga/Echo)**: A Viking-era LLM-powered open-world RPG.\n**[Xeno](https://github.com/CorruptStudio/Xeno)**: A C++ embedded scripting language for modding and sandbox-safe game logic.\n**Blood Runs Red**: A private 16-player co-op FPS inspired by *Red Dawn* and *Tomorrow, When the War Began*.",
         "level": 2,
-        "url": "Xeno.md#overview"
+        "url": "README.md#projects"
       },
       {
-        "id": "key-features",
-        "title": "Key Features",
-        "content": "Key Features\n**Deep Engine Integration:** Xeno hooks directly into core game logic, enabling powerful customizations and modding possibilities without compromising performance or safety.\n**Sandboxed Environment:** Designed with security in mind, preventing mods from causing crashes or exploiting vulnerabilities.\n**Scalable:** As projects grow, Xeno scales naturally, allowing both small tweaks and full-fledged mod creations.\n**Open Source:** Available for developers looking to build or enhance games with an accessible yet powerful scripting tool.",
+        "id": "goals",
+        "title": "🎯 Goals",
+        "content": "🎯 Goals\nPush the boundaries of simulation, emergent AI, and real-time narrative.\nBuild safe and extensible systems for modders.\nShare tools, insights, and documentation with fellow devs.",
         "level": 2,
-        "url": "Xeno.md#key-features"
+        "url": "README.md#goals"
       },
       {
-        "id": "use-cases",
-        "title": "Use Cases",
-        "content": "Use Cases\nAdding new gameplay mechanics\nCustomizing AI behavior\nCreating dynamic quests and events\nModifying UI elements\nExtending multiplayer features",
+        "id": "quote",
+        "title": "🙌 Quote",
+        "content": "🙌 Quote\n*\"It be what it be.\"*\nThis site is maintained by [Anthony T. Lawrence](https://github.com/CorruptTigga), powered by a custom static markdown docs system.",
         "level": 2,
-        "url": "Xeno.md#use-cases"
+        "url": "README.md#quote"
+      }
+    ]
+  },
+  {
+    "id": "SteelEditorSuite",
+    "title": "Steel Editor Suite",
+    "url": "SteelEditorSuite.md",
+    "sections": [
+      {
+        "id": "steel-editor-suite",
+        "title": "Steel Editor Suite",
+        "content": "Steel Editor Suite\n**\"Bespoke, high-performance tooling built to eliminate friction between asset design and engine runtime.\"**\n**Steel Editor Suite** is DoItBetter Studio's proprietary suite of development utilities, designed specifically to build, edit, and manage content for the **Damascus Engine** and *Glyphborn*. Built from the ground up to replace generic third-party software, Steel provides a seamless, code-driven workflow for world creation, UI construction, asset management, and live scripting.",
+        "level": 1,
+        "url": "SteelEditorSuite.md#steel-editor-suite"
       },
       {
-        "id": "development-philosophy",
-        "title": "Development Philosophy",
-        "content": "Development Philosophy\nXeno reflects a vision where modding is a first-class citizen in game development. Instead of patchwork scripting, Xeno provides a native, reliable framework encouraging creativity and community contributions.",
+        "id": "tooling-highlights",
+        "title": "Tooling Highlights",
+        "content": "Tooling Highlights",
         "level": 2,
-        "url": "Xeno.md#development-philosophy"
+        "url": "SteelEditorSuite.md#tooling-highlights"
       },
       {
-        "id": "repository",
-        "title": "Repository",
-        "content": "Repository\nDive into the code and documentation:  \n🔗 [Xeno on GitHub](https://github.com/DoItBetter-Studio/Xeno)",
+        "id": "world-and-map-chunk-editor",
+        "title": "🗺️ World & Map Chunk Editor",
+        "content": "🗺️ World & Map Chunk Editor\n**Multi-Layered Tile Authoring:** Purpose-built for Damascus' 3D tile system, supporting seamless placement across regional, local, and interior tileset layers.\n**Massive Spatial Management:** Graphically construct and manage large matrix chunk streaming layouts with real-time previewing, vertical slope editing, and 3D collision boundaries.",
+        "level": 3,
+        "url": "SteelEditorSuite.md#world-and-map-chunk-editor"
+      },
+      {
+        "id": "streamlined-data-and-asset-pipeline",
+        "title": "📦 Streamlined Data & Asset Pipeline",
+        "content": "📦 Streamlined Data & Asset Pipeline\n**Native Binary Packing:** Compiles raw world data, materials, models, and audio into highly optimized binary caches ready for instant engine consumption.\n**Zero Translation Overhead:** Eliminates heavy import/export delays by matching Damascus' cache-friendly memory structures directly.",
+        "level": 3,
+        "url": "SteelEditorSuite.md#streamlined-data-and-asset-pipeline"
+      },
+      {
+        "id": "code-first-ui-and-system-tools",
+        "title": "🖥️ Code-First UI & System Tools",
+        "content": "🖥️ Code-First UI & System Tools\n**Lightweight Interface Design:** Rapidly author and preview game UI layouts, menus, and HUD components engineered for direct code execution without heavy markup overhead.\n**Animation & Spatial Pipelines:** Fine-tune deterministic animations, timing curves, and spatial effects with precise frame-by-frame control.",
+        "level": 3,
+        "url": "SteelEditorSuite.md#code-first-ui-and-system-tools"
+      },
+      {
+        "id": "integrated-modding-workflow",
+        "title": "Integrated Modding Workflow",
+        "content": "Integrated Modding Workflow\nSteel is natively integrated with **XenoScript**, providing modders and internal developers alike with an intuitive environment to author and validate custom game logic:\n**Live Script Debugging:** Write, compile, and test XenoScript bytecode routines directly within editor tools.\n**Content Bundling:** Package custom maps, quests, and mechanics into secure, sandboxed mod packages ready for distribution.",
         "level": 2,
-        "url": "Xeno.md#repository"
+        "url": "SteelEditorSuite.md#integrated-modding-workflow"
+      },
+      {
+        "id": "philosophy-built-for-the-engine-not-the-market",
+        "title": "Philosophy: Built for the Engine, Not the Market",
+        "content": "Philosophy: Built for the Engine, Not the Market\nGeneric commercial editors try to be everything for everyone, resulting in bloated interfaces, sluggish iteration times, and fragile export pipelines. **Steel Editor Suite** was engineered with a single goal: give DoItBetter Studio 100% precision and speed when shaping the engine and world of *Glyphborn*.",
+        "level": 2,
+        "url": "SteelEditorSuite.md#philosophy-built-for-the-engine-not-the-market"
+      },
+      {
+        "id": "resources-and-technical-deep-dives",
+        "title": "Resources & Technical Deep Dives",
+        "content": "Resources & Technical Deep Dives\n🌐 **[Damascus Engine Architecture]()**\n📜 **[XenoScript Bytecode Specification]()**\n⚔️ **[Glyphborn Development Overview]()**",
+        "level": 3,
+        "url": "SteelEditorSuite.md#resources-and-technical-deep-dives"
+      }
+    ]
+  },
+  {
+    "id": "XenoScript",
+    "title": "XenoScript",
+    "url": "XenoScript.md",
+    "sections": [
+      {
+        "id": "xenoscript",
+        "title": "XenoScript",
+        "content": "XenoScript\n**\"Deterministic, compile-time sandboxed scripting built for absolute modding safety and performance.\"**\n**XenoScript** is a proprietary scripting framework and virtual bytecode machine written entirely in **pure C**. Developed from the ground up specifically for the **Damascus Engine**, XenoScript provides a high-performance, secure modding pipeline that enables creators to extend gameplay mechanics, write custom quests, and author complex world systems without compromising engine stability or security.",
+        "level": 1,
+        "url": "XenoScript.md#xenoscript"
+      },
+      {
+        "id": "architectural-highlights",
+        "title": "Architectural Highlights",
+        "content": "Architectural Highlights",
+        "level": 2,
+        "url": "XenoScript.md#architectural-highlights"
+      },
+      {
+        "id": "compile-time-sandboxed-execution",
+        "title": "🛡️ Compile-Time Sandboxed Execution",
+        "content": "🛡️ Compile-Time Sandboxed Execution\n**Strict Safety Boundaries:** Enforces memory and resource limits at compile time, ensuring modder-written scripts cannot crash the host process, leak memory, or breach host security.\n**Zero Native Pointer Exposure:** Protects core engine state by managing all object and system references through a tightly controlled VM register interface.",
+        "level": 3,
+        "url": "XenoScript.md#compile-time-sandboxed-execution"
+      },
+      {
+        "id": "pure-c-bytecode-engine",
+        "title": "⚡ Pure C Bytecode Engine",
+        "content": "⚡ Pure C Bytecode Engine\n**Minimal Memory Overhead:** Engineered without heavy external runtimes or unpredictable garbage collection pauses, delivering predictable, lightweight VM performance.\n**Seamless Tooling Integration:** Hooks natively into the **Steel Editor Suite**, supporting rapid iteration and live script debugging.",
+        "level": 3,
+        "url": "XenoScript.md#pure-c-bytecode-engine"
+      },
+      {
+        "id": "deterministic-state-synchronization",
+        "title": "⏱️ Deterministic State Synchronization",
+        "content": "⏱️ Deterministic State Synchronization\n**Multiplayer-Safe Logic:** Executes in complete lockstep with Damascus' 3D tile grid and system matrix, guaranteeing deterministic results across client sessions and multiplayer servers.\n**Execution Budgets:** Imposes bounded instruction limits per tick to prevent script-induced framerate stutters or infinite execution loops.",
+        "level": 3,
+        "url": "XenoScript.md#deterministic-state-synchronization"
+      },
+      {
+        "id": "modding-capability-in-glyphborn",
+        "title": "Modding Capability in Glyphborn",
+        "content": "Modding Capability in Glyphborn\nXenoScript serves as the primary gateway for community extensibility in *Glyphborn*:\n**Systems & Mechanics:** Script custom combat techniques, survival rules, crafting algorithms, and trade logic.\n**Dynamic Content & Quests:** Author intricate dialogue structures, regional events, local law enforcement triggers, and Seer vision sequences.\n**World Expansion:** Create custom content bundles that hook directly into Damascus' regional and local tileset streaming systems.",
+        "level": 2,
+        "url": "XenoScript.md#modding-capability-in-glyphborn"
+      },
+      {
+        "id": "resources-and-technical-deep-dives",
+        "title": "Resources & Technical Deep Dives",
+        "content": "Resources & Technical Deep Dives\n🛠️ **<a href=\"#\" data-file=\"SteelEditorSuite.md\">Steel Editor Suite Overview</a>**\n🌐 **<a href=\"#\" data-file=\"Damascus.md\">Damascus Engine Architecture</a>**\n⚔️ **[Glyphborn Modding Documentation]()**",
+        "level": 3,
+        "url": "XenoScript.md#resources-and-technical-deep-dives"
       }
     ]
   }
